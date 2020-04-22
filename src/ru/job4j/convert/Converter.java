@@ -31,3 +31,4 @@ public class Converter {
         boolean passed1 = expected1 == out1;
         System.out.println("120 rubles are 2 dollars. Test result : " + passed);
     }
+}
