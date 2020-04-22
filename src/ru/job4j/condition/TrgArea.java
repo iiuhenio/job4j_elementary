@@ -1,8 +1,8 @@
 package ru.job4j.condition;
 
-public class SqArea {
+public class TrgArea {
     public static double area (double a, double b, double c) {
-        double p1 = (a + b + c) / 2;
+        double p1 = a + b + c;
         double p = p1 / 2;
         double a1 = p - a;
         double a2 = p - b;
