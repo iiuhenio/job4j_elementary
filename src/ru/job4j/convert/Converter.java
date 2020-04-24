@@ -1,6 +1,5 @@
 package ru.job4j.convert;
 
-
 public class Converter {
 
 
