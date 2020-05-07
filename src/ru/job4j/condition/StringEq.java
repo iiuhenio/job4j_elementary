@@ -3,7 +3,7 @@ package ru.job4j.condition;
 public class StringEq {
     public static boolean check(String login) {
         String root = new String("root");
-        boolean access = if ("root".equals(login)) {;
+        boolean access = root.equals(login);
         return access;
     }
 
