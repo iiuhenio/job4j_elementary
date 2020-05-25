@@ -13,4 +13,11 @@ public class CounterTest {
         int expected = 30;
         assertThat(rsl, is(expected));
     }
+    @Test
+    public void whenSumEvenNumbersFromOneToTenThenThirty2() {
+        int rsl = Counter.sumByEven(1, 6);
+        int expected = 12;
+        assertThat(rsl, is(expected));
+    }
+
 }
