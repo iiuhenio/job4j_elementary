@@ -1,19 +1,16 @@
 package ru.job4j.condition;
 
 public class SqArea {
-    public static double area (double a, double b, double c) {
-        double p1 = (a + b + c) / 2;
-        double p = p1 / 2;
-        double a1 = p - a;
-        double a2 = p - b;
-        double a3 = p - c;
-        double rsl1 = p * a1 * a2 * a3;
-        double rsl2 = Math.sqrt(rsl1);
-        return rsl2;
+    public static double square(int p, int k) {
+        double h = 2 * (k + 1);
+        double h1 = p / h;
+        double l = h1 * k;
+        double s = l * h1;
+        return s;
     }
 
     public static void main(String[] args) {
-        double result = TrgArea.area(2, 2, 2);
-        System.out.println("area (2, 2, 2) = " + result);
+        double result1 = SqArea.square(6, 2);
+        System.out.println(" p = 6, k = 2, s = 2, real = " + result1);
     }
 }
