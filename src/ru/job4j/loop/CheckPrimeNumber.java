@@ -9,7 +9,7 @@ public class CheckPrimeNumber {
             }
 
             }
-        return true;
+        return number > 1;
 
         }
 
