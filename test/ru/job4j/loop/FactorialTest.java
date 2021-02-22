@@ -10,7 +10,7 @@ public class FactorialTest {
     public void whenCalculateFactorialForFiveThenOneHundredTwenty() {
         Factorial check = new Factorial();
         int result = check.calc(1);
-        assertThat(result, is (1));
+        assertThat(result, is(1));
 
 
         /* напишите здесь тест, проверяющий, что факториал для числа 5 равен 120. */
@@ -20,7 +20,7 @@ public class FactorialTest {
     public void whenCalculateFactorialForZeroThenOne() {
         Factorial check = new Factorial();
         int result = check.calc(5);
-        assertThat(result, is (120));
+        assertThat(result, is(120));
         /* напишите здесь тест, проверяющий, что факториал для числа 0 равен 1. */
     }
 }

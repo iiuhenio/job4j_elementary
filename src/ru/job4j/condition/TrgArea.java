@@ -1,7 +1,7 @@
 package ru.job4j.condition;
 
 public class TrgArea {
-    public static double area (double a, double b, double c) {
+    public static double area(double a, double b, double c) {
         double p1 = a + b + c;
         double p = p1 / 2;
         double a1 = p - a;
