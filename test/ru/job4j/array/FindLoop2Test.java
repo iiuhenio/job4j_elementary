@@ -24,10 +24,10 @@ public class FindLoop2Test {
     }
     @Test
     public void whenArrayHas7Then7() {
-        int[] input = {6, 5, 4, 3, 2, 1};
-        int value = 7;
+        int[] input = {8, 12, 4, 3, 2, 1};
+        int value = 5;
         int result = FindLoop.indexOf(input, value);
-        int expect = 7;
+        int expect = -1;
         assertThat(result, is(expect));
     }
 
