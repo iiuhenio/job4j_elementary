@@ -3,8 +3,8 @@ package ru.job4j.array;
 public class SwitchArray {
     public static int[] swap(int[] array, int source, int dest) {
         int temp = array[source];
-        array[source] = array[array.length - dest];
-        array[array.length - dest] = temp;
+        array[source] = array[dest];
+        array[dest] = temp;
         return array;
     }
 
