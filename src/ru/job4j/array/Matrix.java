@@ -4,8 +4,8 @@ public class Matrix {
     public static int[][] multiple(int size) {
         int[][] array = new int[size][size];
         for (int row = 0; row < size; row++) {
-            for (int cell = 0; cell < size; cell++) {
-                array[row][cell] = (row + 1) * (cell + 1);
+            for (int cel = 0; cel < size; cel++) {
+                array[row][cel] = (row + 1) * (cel + 1);
             }
         }
 
