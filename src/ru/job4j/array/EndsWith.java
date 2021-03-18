@@ -7,9 +7,6 @@ public class EndsWith {
             if (word[word.length - 1 - index] != post[post.length - 1 - index]) {
                 return false;
             }
-
-
-
         }
         return result;
     }
