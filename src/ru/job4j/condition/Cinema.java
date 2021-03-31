@@ -6,7 +6,7 @@ public class Cinema {
         if (age >= 18) {
             System.out.println("Welcome to the cinema.");
         } else {
-            System.out.println("It is not for you.");
+            System.out.println("It is not for U.");
         }
     }
 
