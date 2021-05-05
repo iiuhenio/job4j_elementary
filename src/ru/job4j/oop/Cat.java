@@ -6,8 +6,7 @@ public class Cat {
     private String food;
 
     public void show() {
-        System.out.println(this.name);
-        System.out.println(this.food);
+        System.out.println(this.name + " съел " + this.food);
     }
 
     public void eat(String meat) {
@@ -24,11 +23,9 @@ public class Cat {
         gav.giveNick("Gav");
         gav.eat("kotleta");
         gav.show();
-        System.out.println("съел");
         Cat black = new Cat();
         black.giveNick("Black");
         black.eat("fish");
         black.show();
-        System.out.println("съел");
     }
 }
