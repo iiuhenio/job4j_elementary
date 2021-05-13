@@ -15,12 +15,12 @@ public class Computer {
         this.cpu = cpu;
     }
 
-    public Computer() {
+    public Computer(int ssd, String cpu) {
         this.ssd = ssd;
         this.cpu = cpu;
-        Computer third = new Computer(256, "AMD Ryzen 5 3600");
-        third.printInfo();
+    }
 
+    public Computer() {
     }
 
 
@@ -29,6 +29,8 @@ public class Computer {
         second.printInfo();
         Computer forth = new Computer(true, 512.0, "AMD Ryzen 7 3700X");
         forth.printInfo();
+        Computer third = new Computer(256, "AMD Ryzen 5 3600");
+        third.printInfo();
 
     }
 
