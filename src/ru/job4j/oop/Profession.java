@@ -15,7 +15,9 @@ public class Profession {
 
     }
 
-    public String getName() {}
+    public String getName() {
+
+    }
     public String getSurname() {}
     public String getEducation() {}
     public String getBirthday() {}
