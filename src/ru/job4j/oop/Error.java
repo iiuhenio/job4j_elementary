@@ -20,6 +20,7 @@ public class Error {
         error.printInfo();
         Error err = new Error(false, 25, "No");
         err.printInfo();
+
     }
 
     public void printInfo() {

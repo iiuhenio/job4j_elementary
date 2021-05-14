@@ -6,7 +6,7 @@ public class Programmer extends Engineer {
 
     private String gender;
 
-    public method1(String skinColor, String gender) {
+    public Programmer(String skinColor, String gender) {
 
     }
 }
