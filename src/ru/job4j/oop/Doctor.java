@@ -4,5 +4,5 @@ public class Doctor extends Profession {
     private String age;
     private String skill;
 
-    Diagnosis heal(Pacient pacient) {}
+    public Diagnosis heal(Pacient pacient) {}
 }
