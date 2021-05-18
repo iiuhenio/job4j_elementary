@@ -10,4 +10,5 @@ public class Doctor extends Profession {
     public Doctor() {
 
     }
+
 }
