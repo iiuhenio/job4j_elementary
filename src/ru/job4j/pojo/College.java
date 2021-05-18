@@ -5,7 +5,7 @@ import java.util.Date;
 public class College {
     public static void main(String[] args) {
         Student student = new Student();
-        student.setName("Антон Иванов");
+        student.setName("Иванов Антон Владимирович");
         student.setGroupNumber("3");
         student.setDate(new Date());
 
