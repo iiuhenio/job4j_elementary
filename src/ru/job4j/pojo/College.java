@@ -9,11 +9,6 @@ public class College {
         student.setGroupNumber("3");
         student.setDate(new Date());
 
-        System.out.println(student.getName() + ", группа № 3, " + "зачислен: " + student.getDate());
-
+        System.out.println(student.getName() + ", группа № " + student.getGroupNumber() + ", зачислен " + student.getDate());
     }
-
-
-
-
 }
