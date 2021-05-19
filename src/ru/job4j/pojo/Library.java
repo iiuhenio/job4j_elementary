@@ -17,18 +17,15 @@ public class Library {
             System.out.println(bo.getName() + " - " + bo.getCount());
         }
         System.out.println("replace Pinokio to Billionare");
+        Book temp = bookshelf[0];
+        bookshelf[0] = bookshelf[3];
+        bookshelf[3] = temp;
         for (int index = 0; index < bookshelf.length; index++) {
-            Book temp = bookshelf[0];
-            bookshelf[0] = bookshelf[3];
-            bookshelf[3] = temp;
-
-
             System.out.println(bookshelf[index].getName() + " - " + bookshelf[index].getCount());
         }
         System.out.println("show Clean code book");
         for (int index = 0; index < bookshelf.length; index++) {
-            if (bookshelf[index].getName().equals("Clean code")) {
-
+            if ("Clean code".equals(bookshelf[index].getName())) {
                 System.out.println(bookshelf[index].getName() + " - " + bookshelf[index].getCount());
             }
         }
