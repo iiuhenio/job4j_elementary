@@ -2,5 +2,10 @@ package ru.job4j.oop;
 
 public class Dentist extends Doctor {
     private String skinColor;
-    private String sex;
+
+
+    public Dentist(String name, String surname, String skinColor) {
+
+        this.skinColor = skinColor;
+    }
 }

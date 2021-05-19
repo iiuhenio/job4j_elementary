@@ -16,6 +16,7 @@ public class Profession {
     }
 
     public Profession() {
+
     }
 
     public String getName() {
