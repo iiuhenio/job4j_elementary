@@ -15,22 +15,15 @@ public class Profession {
 
     }
 
-    public Profession() {
-
-    }
-
     public String getName() {
         return name;
     }
-
     public String getSurname() {
         return surname;
     }
-
     public String getEducation() {
         return education;
     }
-
     public String getBirthday() {
         return birthday;
     }
