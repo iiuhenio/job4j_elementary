@@ -10,4 +10,8 @@ public class Doctor extends Profession {
         this.age = age;
         this.skill = skill;
     }
+
+    Diagnosis heal(Pacient pacient) {
+        return new Diagnosis();
+    }
 }
