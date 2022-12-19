@@ -1,13 +1,13 @@
 package ru.job4j.ahaha;
 
-public class AahahUsage2 implements Interface1 {
-
-    public void ahaha() {
-        System.out.println("Яхуу");
-    }
+public class AahahUsage2 {
 
     public static void main(String[] args) {
-        AahahUsage2 aa = new AahahUsage2();
-        aa.ahaha();
+        char c1 = '\u0035';
+        char c2 = '\u004D';
+        char c3 = '\u006E';
+        System.out.println(c1);
+        System.out.println(c2);
+        System.out.println(c3);
     }
 }
