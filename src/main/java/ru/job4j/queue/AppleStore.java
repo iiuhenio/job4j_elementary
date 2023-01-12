@@ -21,8 +21,7 @@ public class AppleStore {
 
     /* должен вернуть имя последнего счастливого обладателя желаемого товара */
     public String getLastHappyCustomer() {
-        int num = queue.size() - count;
-        for (int i = 0; i < num; i++) {
+        for (int i = 1; i < count; i++) {
             queue.poll();
         }
         return queue.element().name();
@@ -30,8 +29,7 @@ public class AppleStore {
 
     /* должен вернуть имя последнего счастливого обладателя желаемого товара */
     public String getLastUpsetCustomer() {
-        int num = queue.size() - count;
-        for (int i = 0; i <= num; i++) {
+        for (int i = 1; i <= count; i++) {
             queue.poll();
         }
         return queue.element().name();
