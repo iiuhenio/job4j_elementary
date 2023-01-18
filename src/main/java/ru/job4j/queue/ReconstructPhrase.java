@@ -19,13 +19,13 @@ public class ReconstructPhrase {
      * Эта очередь всегда имеет четное число элементов;
      */
     private String getEvenElements() {
-        Deque<Character> rsl;
-        for (int i = 0; i < evenElements.size(); i++) {
-            if (i % 2 != 0) {
-                evenElements.pop();
-            }
+        StringBuilder rsl = new StringBuilder();
+        int size = evenElements.size();
+        for (int i = 0; i < size; i += 2) {
+            rsl.append(evenElements.poll());
+            evenElements.poll();
         }
-        return String.valueOf(evenElements);
+        return rsl.toString();
     }
 
     /**
@@ -33,12 +33,12 @@ public class ReconstructPhrase {
      * Каждый символ мы добавляем в результирующую строку, формируем с помощью StringBuilder.
      */
     private String getDescendingElements() {
-        Deque<Character> rsl = null;
-        for (int i = 0; i < descendingElements.size(); i++) {
-            Character ch = descendingElements.pollLast();
-            rsl.addFirst(ch);
+        StringBuilder rsl = new StringBuilder();
+        int size = descendingElements.size();
+        for (int i = 0; i < size; i++) {
+            rsl.append(descendingElements.pollLast());
         }
-        return String.valueOf(rsl);
+        return rsl.toString();
     }
 
     public String getReconstructPhrase() {
