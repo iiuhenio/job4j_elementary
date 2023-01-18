@@ -20,4 +20,5 @@ public class Broken {
 
     void broken() {
     }
+
 }
