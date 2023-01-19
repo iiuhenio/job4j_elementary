@@ -3,7 +3,6 @@ package ru.job4j.stream;
 import java.util.stream.Stream;
 
 public class CardTask {
-
     public enum Suit {
         Diamonds, Hearts, Spades, Clubs
     }
@@ -20,18 +19,19 @@ public class CardTask {
             this.suit = suit;
             this.value = value;
         }
+    }
 
-        public static void main(String[] args) {
-            for (Suit suit : Suit.values()) {
-                for (Value value : Value.values()) {
-                    System.out.println(suit + " " + value);
-                }
+    public static void main(String[] args) {
+        for (Suit suit : Suit.values()) {
+            for (Value value : Value.values()) {
+                System.out.println(suit + " " + value);
             }
-            System.out.println("Using stream:");
-            Stream.of(Suit.values())
-                    .flatMap(suit -> Stream.of(Value.values())
-                            .map(value -> suit + " " + value))
-                    .forEach(System.out::println);
         }
+
+        System.out.println("=== Using stream ===");
+        Stream.of(Suit.values())
+                .flatMap(suit -> Stream.of(Value.values())
+                        .map(value -> suit.name() + value.name()))
+                .forEach(System.out::println);
     }
 }
