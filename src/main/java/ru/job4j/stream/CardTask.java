@@ -21,7 +21,7 @@ public class CardTask {
         }
     }
 
-    public static void main(String[] args) {
+    public void main(String[] args) {
         for (Suit suit : Suit.values()) {
             for (Value value : Value.values()) {
                 System.out.println(suit + " " + value);
@@ -31,7 +31,7 @@ public class CardTask {
         System.out.println("=== Using stream ===");
         Stream.of(Suit.values())
                 .flatMap(suit -> Stream.of(Value.values())
-                        .map(value -> suit.name() + value.name()))
-                .forEach(System.out::println);
+                        .map(value -> new Card(suit.name(), value.name()))
+                .forEach(System.out::println));
     }
 }
