@@ -17,7 +17,7 @@ public class PasswordValidator {
             throw new IllegalArgumentException("Password should be length [8, 32]");
         }
 
-        String[] strings = new String[] {"qwerty", "12345", "password", "admin", "user"};
+        String[] strings = new String[]{"qwerty", "12345", "password", "admin", "user"};
         for (String string : strings) {
             if (password.toLowerCase().contains(string)) {
                 throw new IllegalArgumentException("Password shouldn't contain substrings: qwerty, 12345,"
@@ -39,20 +39,23 @@ public class PasswordValidator {
             if (!Character.isLetterOrDigit(ch)) {
                 special++;
             }
+            if (digit != 0 && upCount != 0 && loCount != 0 && special != 0) {
+                break;
+            }
         }
 
-            if (digit == 0) {
-                throw new IllegalArgumentException("Password should contain at least one figure");
-            }
-            if (upCount == 0) {
-                throw new IllegalArgumentException("Password should contain at least one uppercase letter");
-            }
-            if (loCount == 0) {
-                throw new IllegalArgumentException("Password should contain at least one lowercase letter");
-            }
-            if (special == 0) {
-                throw new IllegalArgumentException("Password should contain at least one special symbol");
-            }
+        if (digit == 0) {
+            throw new IllegalArgumentException("Password should contain at least one figure");
+        }
+        if (upCount == 0) {
+            throw new IllegalArgumentException("Password should contain at least one uppercase letter");
+        }
+        if (loCount == 0) {
+            throw new IllegalArgumentException("Password should contain at least one lowercase letter");
+        }
+        if (special == 0) {
+            throw new IllegalArgumentException("Password should contain at least one special symbol");
+        }
         return password;
     }
 }
