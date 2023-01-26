@@ -25,4 +25,12 @@ public class Card {
                         .map(value -> new Card(suit, value)))
                 .forEach(System.out::println);
     }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder();
+        sb.append(suit);
+        sb.append(" ").append(value);
+        return sb.toString();
+    }
 }
