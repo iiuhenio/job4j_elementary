@@ -36,4 +36,11 @@ public class Point {
     public void info() {
         System.out.println("Point[" + this.x + ", " + this.y + "]");
     }
+
+    public static void main(String[] args) {
+        Point point = new Point(2, 2, 2);
+        Point point1 = new Point(1, 1, 1);
+        System.out.println(point.distance3d(point1));
+        System.out.println(point1.distance3d(point1));
+    }
 }
