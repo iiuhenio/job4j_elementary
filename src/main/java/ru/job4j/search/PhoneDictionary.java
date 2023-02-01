@@ -24,6 +24,8 @@ public class PhoneDictionary {
                 || combinePhone.test(x.getPhone())
                 || combineAddress.test(x.getAddress());
 
+        Predicate<Person> combine2 = x -> combineName.or(combineSurname).or(combinePhone).test(x.getName());
+
         for (Person person : persons) {
             if (combine.test(person)) {
                 result.add(person);
