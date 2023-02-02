@@ -14,17 +14,12 @@ public class PhoneDictionary {
 
         var result = new ArrayList<Person>();
 
-        Predicate<String> combineName = x -> x.contains(key);
-        Predicate<String> combineSurname = x -> x.contains(key);
-        Predicate<String> combinePhone = x -> x.contains(key);
-        Predicate<String> combineAddress = x -> x.contains(key);
+        Predicate<Person> combineName = x -> x.getName().contains(key);
+        Predicate<Person> combineSurname = x -> x.getSurname().contains(key);
+        Predicate<Person> combinePhone = x -> x.getPhone().contains(key);
+        Predicate<Person> combineAddress = x -> x.getAddress().contains(key);
 
-        Predicate<Person> combine = x -> combineName.test(x.getName())
-                || combineSurname.test(x.getSurname())
-                || combinePhone.test(x.getPhone())
-                || combineAddress.test(x.getAddress());
-
-        Predicate<Person> combine2 = x -> combineName.or(combineSurname).or(combinePhone).test(x.getName());
+        Predicate<Person> combine = combineName.or(combineSurname).or(combinePhone).or(combineAddress);
 
         for (Person person : persons) {
             if (combine.test(person)) {
